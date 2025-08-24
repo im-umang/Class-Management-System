@@ -1,0 +1,180 @@
+{% extends "home_base.html" %}
+{% block content %}
+{% load static %}
+
+<!-- Header Start -->
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <h1 class="display-3 text-white animated slideInDown">About Us</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a class="text-white" href="{% url "Home" %}">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Header End -->
+
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-3">
+                        <i class="fa fa-3x fa-solid fa-heart text-primary mb-4"></i>
+                        <h5 class="mb-3">Pride in what we do</h5>
+                        <p>
+                            We take immense pride in consistently delivering high-quality 
+                            instruction and empowering students to succeed in their chosen tech field.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-3">
+                        <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                        <h5 class="mb-3">Skilled instructors</h5>
+                        <p>
+                            At our computer class center, we are proud to have a team of skilled instructors
+                            who possess extensive knowledge and experience in their respective fields.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item text-center pt-3">
+                    <div class="p-3">
+                        <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                        <h5 class="mb-3">Home projects</h5>
+                        <p>
+                            We believe that practical application is a crucial aspect of learning.
+                            Home projects allow students to put their newly
+                            acquired skills into practice.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="service-item text-center pt-3">
+                  <div class="p-3">
+                    <i class="fas fa-3x fa-thumbs-up text-primary mb-4"></i>
+                    <h5 class="mb-3">Be excellent to each other</h5>
+                    <p>
+                        We strive to create a supportive and inclusive environment where everyone is treated with respect and kindness,
+                         fostering positive relationships within our community.
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-200" src="{% static 'img/about.svg' %}" alt=""
+                        style="object-fit: cover" />
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3">
+                    About Us
+                </h6>
+                <h1 class="mb-4">Welcome to VCS</h1>
+                <p class="mb-4">
+                    Welcome to our computer training center, where we are dedicated to empowering individuals with
+                     the skills and knowledge necessary to thrive in the digital age.
+                </p>
+                <p class="mb-4">
+                    Whether you are a beginner looking to build a solid foundation or an advanced learner seeking to expand your expertise, 
+                     our tailored curriculum and hands-on training will equip you with the tools you need to succeed. 
+                     Join us on this exciting journey as we unlock your potential and enable you to conquer the world of technology.
+                </p>
+                <p class="mb-4">
+                    VCS has introduced a gamut of comprehensive courses in Software, Hardware & Networking,
+                     Interior Design, Fashion Technology, Data Science, Teacher Training, Accounting & Finance, etc.
+                     Our expert curriculum development team focus on industry demands while designing futuristic courses.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- About-2 Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h1 class="mb-4">Striving for Excellence in Education & Training</h1>
+                <hr style="width: 20%; color: #00bfd8; height: 1%">
+                <p class="mb-4">
+                    <h6>You get to choose what you want to learn, and we will equip you with the latest skills.</h6>
+                </p>
+                <div class="row gy-2 gx-4 mb-4">
+                    <div class="col-sm-12">
+                        <p class="mb-0">
+                            <i class="fa fa-check text-primary me-2"></i>Basically we'll teach you step by step what you need to do
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="mb-0">
+                            <i class="fa fa-check text-primary me-2"></i>Advanced Curriculam to meet the industry demand
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="mb-0">
+                            <i class="fa fa-check text-primary me-2"></i>Online examinations every month and quick certificate processing
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="mb-0">
+                            <i class="fa fa-check text-primary me-2"></i>Skilled Instructors
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="mb-0">
+                            <i class="fa fa-check text-primary me-2"></i>Goverment Certificate
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="mb-0">
+                            <i class="fa fa-check text-primary me-2"></i>Advanced Syllabus
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <p class="mb-0">
+                            <i class="fa fa-check text-primary me-2"></i>Expert Faculty
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-200" src="{% static 'img/skill.svg' %}" alt=""
+                        style="object-fit: cover" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About-2 End -->
+{% endblock %}

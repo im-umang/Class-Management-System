@@ -1,0 +1,234 @@
+{% extends "home_base.html" %} {% block content %} {% load static %}
+
+<!-- Header Start -->
+<div class="container-fluid bg-primary py-5 mb-5 page-header">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <h1 class="display-3 text-white animated slideInDown">Courses</h1>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center">
+            <li class="breadcrumb-item">
+              <a class="text-white" href="{% url 'Home' %}">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-white" href="#">Pages</a>
+            </li>
+            <li class="breadcrumb-item text-white active" aria-current="page">
+              Courses
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Header End -->
+
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Categories
+      </h6>
+      <h1 class="mb-5">Courses Categories</h1>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-7 col-md-6">
+        <div class="row g-3">
+          <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+            <a class="position-relative d-block overflow-hidden" href="{% url 'Contact' %}">
+              <img class="img-fluid" src="{% static 'img/cat-1.jpg' %}" alt="" />
+              <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                <h5 class="m-0">Desktop Publishing</h5>
+                <medium class="text-primary">Join Now</medium>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+            <a class="position-relative d-block overflow-hidden" href="{% url 'Contact' %}">
+              <img class="img-fluid" src="{% static 'img/cat-2.jpg' %}" alt="" />
+              <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                <h5 class="m-0">Multimedia & Graphics</h5>
+                <medium class="text-primary">Join Now</medium>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+            <a class="position-relative d-block overflow-hidden" href="{% url 'Contact' %}">
+              <img class="img-fluid" src="{% static 'img/cat-3.jpg' %}" alt="" />
+              
+              <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                <h5 class="m-0">Web Development</h5>
+                <medium class="text-primary">Join Now</medium>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px">
+        <a class="position-relative d-block h-100 overflow-hidden" href="{% url 'Contact' %}">
+          <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/cat-4.jpg' %}" alt=""
+            style="object-fit: cover" />
+          <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+            <h5 class="m-0">AutoCAD</h5>
+            <medium class="text-primary">Join Now</medium>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Categories Start -->
+
+
+<!-- Courses Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Courses
+      </h6>
+      <h1 class="mb-5">Popular Courses</h1>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="course-item bg-light">
+
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/course-1.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              M S OFFICE
+            </h5>
+            <div class="mb-2">
+              <small>Mastering MS Office is crucial for success in academic, professional, and personal endeavors in today's digital age.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/course-2.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              Financial Accounting with Tally
+            </h5>
+            <div class="mb-2">
+              <small>Mastering Tally enhances students' employability and efficiency in handling financial transactions and analysis.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/course-3.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              AutoCAD
+            </h5>
+            <div class="mb-2">
+              <small> Proficiency in AutoCAD opens doors to diverse career opportunities in fields requiring meticulous design and drafting expertise.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/uiux.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              UI/UX Design
+            </h5>
+            <div class="mb-2">
+              <small>Mastering UI/UX design equips students with the skills to craft engaging digital experiences, product design, and user interface optimization.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/web.jpg' %}" alt="" style="height: 263px; width: 500px;"/>
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              Web Development
+            </h5>
+            <div class="mb-2">
+              <small> Mastery of web development in class prepares students for careers in front-end or back-end development, or freelance web design.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/mobile.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              Mobile App Development
+            </h5>
+            <div class="mb-2">
+              <small>Covers mobile application development for iOS and Android platforms, including programming languages like Swift, frameworks such as Flutter or React Native.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- Courses End -->
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'staff_template/base_template.html' %}
+
+{% block page_title %}
+Notification
+{% endblock page_title %}
+
+{% block main_content %}
+{% load static %}
+
+<div class="content container-fluid">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title"></h3>
+            </div>
+        </div>
+    </div>
+    {% include 'messages.html' %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card card-table">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-center mb-0" id="table_id">
+                            <thead>
+                                <tr>
+                                    <th>Message</th>
+                                    <th class="text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in notification %}
+                                <tr>
+                                    <td>{{i.message}}</td>
+                                    <td class="text-right">
+                                        <div class="actions">
+                                            {% if i.status == 0 %}
+                                            <a href="{% url 'mark_as_read' status=i.id %}" class="btn btn-danger">Mark
+                                                As Read</a>
+                                            {% else %}
+                                            <button class="btn btn-danger" disabled="disabled">Mark As Read</button>
+                                            {% endif %}
+                                        </div>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock main_content %}

@@ -1,0 +1,433 @@
+{% extends "home_base.html" %}
+{% block content %}
+{% load static %}
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5">
+  <div class="owl-carousel header-carousel position-relative">
+    <div class="owl-carousel-item position-relative">
+      <img class="img-fluid" src="{% static 'img/carousel-1.jpg' %}" alt="" />
+      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="background: rgba(24, 29, 56, 0.7)">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-sm-10 col-lg-8">
+              <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
+                Versatile Computer Services
+              </h5>
+              <h3 class="display-3 text-white animated slideInDown">
+                The Best Computer Skilled Providing Classes
+              </h3>
+              <p class="fs-5 text-white mb-4 pb-2">
+                Our computer center provides comprehensive courses and training programs for individuals of all skill levels.
+              </p>
+              {% comment %} <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a> {% endcomment %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="owl-carousel-item position-relative">
+      <img class="img-fluid" src="{% static 'img/carousel-2.jpg' %}" alt="" />
+      <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+        style="background: rgba(24, 29, 56, 0.7)">
+        <div class="container">
+          <div class="row justify-content-start">
+            <div class="col-sm-10 col-lg-8">
+              <h5 class="text-primary text-uppercase mb-3 animated slideInDown">
+                Versatile Computer Services
+              </h5>
+              <h1 class="display-3 text-white animated slideInDown">
+                Get Educated Tech From Our Classes
+              </h1>
+              <p class="fs-5 text-white mb-4 pb-2">
+                We are committed to delivering high-quality tech education, 
+                ensuring that our students are equipped with the latest industry 
+                trends and tools to excel in their chosen tech field.
+              </p>
+              {% comment %} <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Read More</a> {% endcomment %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Carousel End -->
+
+<!-- Service Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="service-item text-center pt-3">
+          <div class="p-3">
+              <i class="fa fa-3x fa-solid fa-heart text-primary mb-4"></i>
+              <h5 class="mb-3">Pride in what we do</h5>
+              <p>
+                We take immense pride in consistently delivering high-quality 
+                instruction and empowering students to succeed in their chosen tech field.
+              </p>
+          </div>
+      </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="service-item text-center pt-3">
+          <div class="p-3">
+            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+            <h5 class="mb-3">Skilled instructors</h5>
+            <p>
+              At our computer class center, we are proud to have a team of skilled instructors 
+              who possess extensive knowledge and experience in their respective fields.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="service-item text-center pt-3">
+          <div class="p-3">
+            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+            <h5 class="mb-3">Home projects</h5>
+            <p>
+              We believe that practical application is a crucial aspect of learning.
+              Home projects allow students to put their newly
+              acquired skills into practice.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="service-item text-center pt-3">
+          <div class="p-3">
+            <i class="fas fa-3x fa-thumbs-up text-primary mb-4"></i>
+            <h5 class="mb-3">Be excellent to each other</h5>
+            <p>
+              We strive to create a supportive and inclusive environment where everyone is treated with respect and kindness,
+               fostering positive relationships within our community.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Service End -->
+
+<!-- About Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px">
+        <div class="position-relative h-100">
+          <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/about.svg' %}" alt=""
+            style="object-fit: cover" />
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+        <h6 class="section-title bg-white text-start text-primary pe-3">
+            About Us
+        </h6>
+        <h1 class="mb-4">Welcome to VCS</h1>
+        <p class="mb-4">
+            Welcome to our computer training center, where we are dedicated to empowering individuals with
+             the skills and knowledge necessary to thrive in the digital age.
+        </p>
+        <p class="mb-4">
+            Whether you are a beginner looking to build a solid foundation or an advanced learner seeking to expand your expertise, 
+             our tailored curriculum and hands-on training will equip you with the tools you need to succeed. 
+             Join us on this exciting journey as we unlock your potential and enable you to conquer the world of technology.
+        </p>
+        <p class="mb-4">
+            VCS has introduced a gamut of comprehensive courses in Software, Hardware & Networking,
+             Interior Design, Fashion Technology, Data Science, Teacher Training, Accounting & Finance, etc.
+             Our expert curriculum development team focus on industry demands while designing futuristic courses.
+        </p>
+        <a class="btn btn-primary py-3 px-5 mt-2" href="{% url 'About' %}">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+<!-- Categories Start -->
+<div class="container-xxl py-5 category">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Categories
+      </h6>
+      <h1 class="mb-5">Courses Categories</h1>
+    </div>
+    <div class="row g-3">
+      <div class="col-lg-7 col-md-6">
+        <div class="row g-3">
+          <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+            <a class="position-relative d-block overflow-hidden" href="{% url 'Contact' %}">
+              <img class="img-fluid" src="{% static 'img/cat-1.jpg' %}" alt="" />
+              <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                <h5 class="m-0">Desktop Publishing</h5>
+                <medium class="text-primary">Join Now</medium>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+            <a class="position-relative d-block overflow-hidden" href="{% url 'Contact' %}">
+              <img class="img-fluid" src="{% static 'img/cat-2.jpg' %}" alt="" />
+              <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                <h5 class="m-0">Multimedia & Graphics</h5>
+                <medium class="text-primary">Join Now</medium>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+            <a class="position-relative d-block overflow-hidden" href="{% url 'Contact' %}">
+              <img class="img-fluid" src="{% static 'img/cat-3.jpg' %}" alt="" />
+              <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+                <h5 class="m-0">Web Development</h5>
+                <medium class="text-primary">Join Now</medium>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px">
+        <a class="position-relative d-block h-100 overflow-hidden" href="{% url 'Courses' %}">
+          <img class="img-fluid position-absolute w-100 h-100" src="{% static 'img/cat-4.jpg' %}" alt=""
+            style="object-fit: cover" />
+          <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px">
+            <h5 class="m-0">AutoCAD</h5>
+            <medium class="text-primary">Join Now</medium>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Categories Start -->
+
+<!-- Courses Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Courses
+      </h6>
+      <h1 class="mb-5">Popular Courses</h1>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="course-item bg-light">
+
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/course-1.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              M S OFFICE
+            </h5>
+            <div class="mb-2">
+              <small>Mastering MS Office is crucial for success in academic, professional, and personal endeavors in today's digital age.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/course-2.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              Financial Accounting with Tally
+            </h5>
+            <div class="mb-2">
+              <small>Mastering Tally enhances students' employability and efficiency in handling financial transactions and analysis.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="course-item bg-light">
+          <div class="position-relative overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/course-3.jpg' %}" alt="" />
+            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+              <a href="{% url 'Contact' %}" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 30px 30px 30px 30px">Join
+                Now</a>
+            </div>
+          </div>
+          <div class="text-center p-4 pb-0">
+            <h5 class="mb-3">
+              AutoCAD
+            </h5>
+            <div class="mb-2">
+              <small> Proficiency in AutoCAD opens doors to diverse career opportunities in fields requiring meticulous design and drafting expertise.</small>
+            </div>
+          </div>
+          <div class="d-flex border-top">
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+        <a href="{% url 'Courses' %}"><h6 class="bg-white text-center text-primary px-3">
+          View All Courses<i class="fa fa-arrow-right ms-3"></i>
+        </h6></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Courses End -->
+
+
+<!-- Team Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Instructors
+      </h6>
+      <h1 class="mb-5">Expert Instructors</h1>
+    </div>
+    <div class="row g-4">
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/team-4.jpeg' %}" alt="" />
+          </div>
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Jay Joshi</h5>
+            <small>Finance Mastery</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/team-5.jpeg' %}" alt="" />
+          </div>
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Umang Trivedi</h5>
+            <small>UI/UX Designer</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/team-7.jpeg' %}" alt="" />
+          </div>
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Alpesh Patel</h5>
+            <small>M S OFFICE Mastery</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="team-item bg-light">
+          <div class="overflow-hidden">
+            <img class="img-fluid" src="{% static 'img/team-6.jpeg' %}" alt="" />
+          </div>
+          <div class="position-relative d-flex justify-content-center" style="margin-top: -23px">
+            <div class="bg-light d-flex justify-content-center pt-2 px-1">
+            </div>
+          </div>
+          <div class="text-center p-4">
+            <h5 class="mb-0">Sanket Patel</h5>
+            <small>AutoCAD Mastery</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team End -->
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+  <div class="container">
+    <div class="text-center">
+      <h6 class="section-title bg-white text-center text-primary px-3">
+        Testimonial
+      </h6>
+      <h1 class="mb-5">Our Students Say!</h1>
+    </div>
+    <div class="owl-carousel testimonial-carousel position-relative">
+      <div class="testimonial-item text-center">
+        <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-2.jpg' %}"
+          style="width: 80px; height: 80px" />
+        <h5 class="mb-0">Keyur Dumatar</h5>
+        <p>Graphics Designer</p>
+        <div class="testimonial-text bg-light text-center p-4">
+          <p class="mb-0">
+            I've developed a strong foundation in design principles and gained practical skills that
+             have already opened doors for me in the industry.
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-item text-center">
+        <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-3.jpg' %}"
+          style="width: 80px; height: 80px" />
+        <h5 class="mb-0">Chavda Ankit</h5>
+        <p>Web Devloper</p>
+        <div class="testimonial-text bg-light text-center p-4">
+          <p class="mb-0">
+            Thanks to this program, I've landed my dream job as a web developer and am excited to see where my career takes me.
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-item text-center">
+        <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-1.jpg' %}"
+          style="width: 80px; height: 80px" />
+        <h5 class="mb-0">Rathod Vidhi</h5>
+        <p>Ms Office Mastery</p>
+        <div class="testimonial-text bg-light text-center p-4">
+          <p class="mb-0">
+            The instructors are friendly and approachable, always willing to answer questions and provide guidance.
+          </p>
+        </div>
+      </div>
+      <div class="testimonial-item text-center">
+        <img class="border rounded-circle p-2 mx-auto mb-3" src="{% static 'img/testimonial-4.jpg' %}"
+          style="width: 80px; height: 80px" />
+        <h5 class="mb-0">Radhika Valand</h5>
+        <p>Accountant</p>
+        <div class="testimonial-text bg-light text-center p-4">
+          <p class="mb-0">
+            The instructors are experts in their field and provide comprehensive training on Tally software and accounting principles.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Testimonial End -->
+
+{% endblock %}

@@ -1,0 +1,148 @@
+{% extends "hod_template/base_template.html" %}
+
+{% block page_title %}
+    Send Staff Notification
+{% endblock page_title %}
+
+
+{% block main_content %}
+
+<div class="content container-fluid">
+    <div class="page-header">
+        <div class="row align-items-center">
+            <div class="col">
+                <h3 class="page-title"></h3>
+                
+            </div>
+            <div class="col-auto text-right float-right ml-auto">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                    View All Notification
+                </button>
+            </div>
+        </div>
+    </div>
+    {% include 'messages.html' %}
+    <div class="row mt-5">
+        <div class="col-sm-12">
+            <div class="card card-table">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover table-center mb-0" id="table_id">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th class="text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for i in staff %}
+                                <tr>
+                                    <td>{{i.id}}</td>
+                                    <td>
+                                        <h6 class="table-avatar">
+                                            <p>{{i.admin.first_name}}&nbsp;{{i.admin.last_name}}</p>
+                                        </h6>
+                                    </td>
+                                    <td>{{i.admin.email}}</td>
+                                    <td class="text-right">
+                                        <button type="button" class="btn btn-success" data-toggle="modal"
+                                            data-target="#sendnotification-{{forloop.counter}}">
+                                            Add Notification
+                                        </button>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- View All Notification Modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Staff Notification</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card card-table">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-center mb-0" id="table_id">
+                                        <thead>
+                                            <tr>
+                                                
+                                                <th style="width: 60%">Message</th>
+                                                <th class="text-right" style="width: 30%">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for i in see_Notification %}
+                                            <tr>
+                                                <td>{{i.message}}</td>
+                                                
+                                                {% if i.status == 0 %}
+                                                <td class="text-right" style="width: 30%"><span class="badge badge-danger">UnSeen</span></td>
+                                                {% else %}
+                                                <td class="text-right" style="width: 30%"><span class="badge badge-success">Seen</span></td>
+                                                {% endif %}
+                                                <td class="text-right">
+                                                </td>
+                                            </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Send Notification Modal -->
+{% for i in staff %}
+<div class="modal fade" id="sendnotification-{{forloop.counter}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle1">Send Staff Notification To {{i.admin.first_name}}&nbsp;{{i.admin.last_name}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="{% url 'Staff_Save_Noti' %}">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="message">
+                        <input type="text" class="form-control" name="staff_id" value="{{i.admin.id}}" hidden>
+                        
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}
