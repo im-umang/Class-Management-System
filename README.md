@@ -97,4 +97,5 @@ Email: sanjivanigohil@gmail.com
 Password: sanjivani
 
 ## Output ScreeShot
-[Screenshots.pdf](https://github.com/im-umang/Class-Management-System/files/15138417/Final.PPT.pdf)
+[Screenshots.pdf](https://github.com/user-attachments/files/21956598/Final.PPT.pdf)
+
